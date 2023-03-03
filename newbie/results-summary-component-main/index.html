@@ -13,21 +13,77 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
-  <link rel="stylesheet" href="./style.css">
-</head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,700;0,800;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css">
+  </head>
 <body>
-
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
+  <section class="container">
+    <article class="result">
+      <p class="result-text">Your Result</p>
+      <div class="result-circle">
+        <p class="result-circle_mean">76</p>
+        <p class="result-circle_text">of 100</p>
+      </div>
+      <p class="result-note">Great</p>
+      <p class="result-text">You scored higher than 65% of the people who have taken these tests.</p>
+    </article>
+    <article class="otro">
+      <p class="summary-title">Summary</p>
+      <div class="summary-box box-red">
+        <div class="summary-box-info">
+          <img src="./assets/images/icon-reaction.svg" alt="">
+          <p>Reaction</p>
+        </div>
+        <p class="summary-result">
+          <strong>80</strong>
+          / 100
+        </p>
+      </div>
+      <div class="summary-box box-yellow">
+        <div class="summary-box-info">
+          <img src="./assets/images/icon-memory.svg" alt="">
+          <p>Reaction</p>
+        </div>
+        <p class="summary-result">
+          <strong>80</strong>
+          / 100
+        </p>
+      </div>
+      <div class="summary-box box-green">
+        <div class="summary-box-info">
+          <img src="./assets/images/icon-verbal.svg" alt="">
+          <p>Reaction</p>
+        </div>
+        <p class="summary-result">
+          <strong>80</strong>
+          / 100
+        </p>
+      </div>
+      <div class="summary-box box-blue">
+        <div class="summary-box-info">
+          <img src="./assets/images/icon-visual.svg" alt="">
+          <p>Reaction</p>
+        </div>
+        <p class="summary-result">
+          <strong>80</strong>
+          / 100
+        </p>
+      </div>
+    </article>
+  </section>
   
-  Summary
+  
+  
 
-  Reaction
-  80 / 100
+  
+  
+  
+
+  
+  80 
 
   Memory
   92 / 100
@@ -42,7 +98,7 @@
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Leslie Centeno</a>.
   </div>
   <script src="./index.js"></script>
 </body>
