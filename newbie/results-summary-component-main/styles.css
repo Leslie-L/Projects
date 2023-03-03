@@ -31,7 +31,7 @@ body{
 .container{
     display: grid;
     place-content: center;
-    height:80vh;
+    height:90vh;
     
 }
 
@@ -82,10 +82,15 @@ body{
 
 #SUMMARY
 .otro{
-    padding: 25px;
-    height: 450px;
+   
+    height: 500px;
+ 
+    display: grid;
+    place-content: center;
+}
+.resumen{
     width: 375px;
-
+    padding: 20px;
 }
 .summary-title{
     font-size: 1.2rem;
@@ -127,4 +132,13 @@ body{
 .box-blue{
     background-color: hsla(234, 85%, 45%, 0.1);
     color: var(--light-blue);
+}
+button{
+    margin-top: 20px;
+    width: 350px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: var(--Dark-gray-blue);
+    color: var(--White);
+    font-size: 1rem;
 }
