@@ -134,6 +134,7 @@ body{
     color: var(--light-blue);
 }
 button{
+    border: none;
     margin-top: 20px;
     width: 350px;
     height: 50px;
@@ -141,4 +142,46 @@ button{
     background-color: var(--Dark-gray-blue);
     color: var(--White);
     font-size: 1rem;
+}
+button:hover{
+    background-image: linear-gradient(var(--Light-slate-blue), var(--Light-royal-blue));
+}
+
+@media (min-width: 720px) {
+    body{
+        display: grid;
+        place-content: center;
+        height: 100vh;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 375px;
+        
+    }
+    .result{
+        width: 330px;
+        height: 375px;
+        border-radius: 30px;
+        
+    }
+    .result-text{
+        margin:  10px 45px;
+    }
+    .resumen{
+        width: 330px;
+        height: 375px;
+        box-shadow: 6px 5px 12px 0px hsl(252deg 100% 67% / 17%);
+        padding: 5px;
+        display: grid;
+        place-content: center;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+    .summary-box,button{
+        width: 250px;
+        padding: 0;
+        padding: 10px 15px;
+    }
 }
