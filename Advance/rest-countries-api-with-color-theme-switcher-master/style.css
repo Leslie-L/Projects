@@ -9,7 +9,8 @@
     --VeryDarkBlue-LMT: hsl(200, 15%, 8%);
     --DarkGray-LMI: hsl(0, 0%, 52%);
     --VeryLightGray-LMB: hsl(0, 0%, 98%);
-    --White-DMT-LME: hsl(0, 0%, 100%);
+    --White-LME: hsl(0, 0%, 100%);
+    --White-DMT: hsl(0, 0%, 100%);
 }
 
 body{
@@ -21,7 +22,7 @@ body{
 .bar{
     width: 100%;
     height: 50px;
-    background: var(--White-DMT-LME);
+    background: var(--White-LME);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,7 +46,7 @@ body{
 .container{
     margin-top: 40px;
     width: 100%;
-    min-height: 90vh;
+    min-height: 95vh;
     padding: 10px;
 }
 .countries{
@@ -68,7 +69,7 @@ body{
     border-left: 1px solid var(--DarkGray-LMI);
     border-top-left-radius: 5px ;
     border-bottom-left-radius: 5px ;
-    background-color: var(--White-DMT-LME);
+    background-color: var(--White-LME);
     color: var(--DarkGray-LMI);
 }
 .countries-search input{
@@ -80,7 +81,8 @@ body{
     border-right: 1px solid var(--DarkGray-LMI);
     border-top-right-radius: 5px ;
     border-bottom-right-radius: 5px ;
-    
+    background-color: var(--White-LME);
+    color: var(--VeryDarkBlue-LMT);
 }
 .countries-filter select{
     margin-top: 20px;
@@ -89,9 +91,12 @@ body{
     outline: 0;
     border-radius: 5px;
     padding: 10px;
+    background-color: var(--White-LME);
+    color: var(--VeryDarkBlue-LMT);
 }
 .countries-list{
     margin-top: 25px;
+    min-height: 80vh;
     height: 100%;
     width: 100%;
     display: grid;
@@ -104,7 +109,8 @@ body{
     height: 300px;
     width: 240px;
     border-radius: 5px;
-    background-color: var(--White-DMT-LME);
+    background-color: var(--White-LME);
+    color: var(--VeryDarkBlue-LMT);
 }
 .item img{
     height: 150px;
@@ -141,5 +147,20 @@ body{
     
   }
 
-
+.dark{
+    --DarkGray-LMI: hsl(209, 23%, 22%);
+    --VeryLightGray-LMB: hsl(209, 23%, 22%);
+    --White-LME: hsl(207, 26%, 17%);
+    --White-DMT: hsl(0, 0%, 100%);
+    --VeryDarkBlue-LMT: hsl(0, 0%, 100%);
+}
  
+/*
+- Dark Blue (Dark Mode Elements): hsl(209, 23%, 22%)
+- Very Dark Blue (Dark Mode Background): hsl(207, 26%, 17%)
+- Very Dark Blue (Light Mode Text): hsl(200, 15%, 8%)
+- Dark Gray (Light Mode Input): hsl(0, 0%, 52%)
+- Very Light Gray (Light Mode Background): hsl(0, 0%, 98%)
+- White (Dark Mode Text & Light Mode Elements): hsl(0, 0%, 100%)
+
+*/

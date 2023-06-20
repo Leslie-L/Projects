@@ -10,12 +10,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5eed502243.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body id="all">
     <header class="bar">
         <h1 class="bar-title">Where in the World?</h1>
         <div class="bar-darkmode">
             <span class="bar-darkmode__icon">
-                <i class="fa-sharp fa-regular fa-moon"></i>
+                <i class="fa-sharp fa-regular fa-moon" id="iconColor"></i>
             </span>
             <p class="bar-darkmode__text">Dark Mode</p>
         </div>
@@ -30,7 +30,7 @@
             </div>
             <div class="countries-filter">
                 <select name="region" id="region">
-                    <option disabled selected>Filter by Region</option>
+                    <option value="no" selected>Filter by Region</option>
                     <option value="africa">Africa</option>
                     <option value="america">America</option>
                     <option value="asia">Asia</option>
