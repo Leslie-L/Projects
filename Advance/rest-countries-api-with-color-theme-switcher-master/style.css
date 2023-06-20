@@ -154,7 +154,132 @@ body{
     --White-DMT: hsl(0, 0%, 100%);
     --VeryDarkBlue-LMT: hsl(0, 0%, 100%);
 }
- 
+.hide{
+    display: none;
+}
+/*
+
+*/
+
+.modal{
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item_modal{
+    height: 25px;
+    width: 150px;
+    margin-top: 20px;
+}
+.modal_container{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.modal_container--info{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.modal_container--img{
+    height: 150px;
+    width: 250px;
+}
+.bnt{
+    align-self: flex-start;
+}
+.button{
+    width: 70px;
+    height: 25px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px 0px hsl(0, 0%, 52%);
+    border: none;
+    background-color: var(--White-LME);
+    color: var(--VeryDarkBlue-LMT);
+    margin: 5px;
+}
+h3{
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+.modal_item1{
+    margin-top: 25px;
+}
+.modal_item2{
+    margin-top: 50px;
+}
+.modal_item3{
+    margin-top: 50px;
+}
+.modal_item3 h4{
+    margin-top: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 200px;
+}
+.modal_item3--list{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+@media only screen and (min-width: 720px) {
+    
+    .modal_container{
+        flex-direction: row;
+    }
+    .modal_container--img{
+        height: 400px;
+        width: 350px;
+        margin: 15px;
+    }
+    .modal_container--info{
+        width: 50%;
+        display: grid;
+        grid-template:  'title tile'
+                        'a1 a2'
+                        'list list';
+        gap: 15px;
+    }
+    .bnt{
+        align-self: flex-start;
+    }
+    h3{
+        grid-area: title;
+        align-self: self-end;
+    }
+    .modal_item1{
+        grid-area: a1;
+        margin-top: 0px;
+    }
+    .modal_item2{
+        grid-area: a2;
+        margin-top: 0px;
+    }
+    .modal_item3{
+        margin-top: 0px;
+        grid-area: list;
+        align-self: self-start;
+    }
+    .modal_item3 h4{
+        margin-top: 0px;
+    }
+}
+@media only screen and (min-width: 900px) {
+    .modal_container{
+        gap: 25px;
+    }
+    .modal_container--img{
+        height: 350px;
+        width: 500px;
+        margin: 15px;
+    }
+}
 /*
 - Dark Blue (Dark Mode Elements): hsl(209, 23%, 22%)
 - Very Dark Blue (Dark Mode Background): hsl(207, 26%, 17%)

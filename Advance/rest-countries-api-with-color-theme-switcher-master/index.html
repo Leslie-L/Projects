@@ -20,7 +20,7 @@
             <p class="bar-darkmode__text">Dark Mode</p>
         </div>
     </header>
-    <main class="container">
+    <main class="container hide">
         <section class="countries"> 
             <div class="countries-search">
                 <span>
@@ -123,7 +123,38 @@
             Created by Leslie Centeno
         </div>
     </main>
-   
+   <section class="modal " id="modal">
+        <button class="bnt button">
+            <span><i class="fa-solid fa-arrow-left"></i></span>
+            Back
+        </button>
+        <div class="modal_container">
+            <img  class="modal_container--img item skeleton" alt="">
+            <article class="modal_container--info">
+                <h3 class="item_modal skeleton" ></h3> 
+                <div class="modal_item1">
+                   <p class="item_modal skeleton"><b>Native Name</b></p>
+                   <p class="item_modal skeleton"><b>Population:</b></p>
+                   <p class="item_modal skeleton"><b>Region:</b></p>
+                   <p class="item_modal skeleton"><b>Sub Region:</b></p>
+                   <p class="item_modal skeleton"><b>Capital:</b></p>
+                </div>
+                <div class="modal_item2">
+                   <p class="item_modal skeleton"><b>Top Level Domain:</b></p>
+                   <p class="item_modal skeleton"><b>Currencies:</b></p>
+                   <p class="item_modal skeleton"><b>Languages:</b></p>
+                </div>
+                <div class="modal_item3">
+                    <h4 class="item_modal skeleton">Border Countries:</h4>
+                    <div class="modal_item3--list">
+                        <p class="button skeleton"></p>
+                        <p class="button skeleton"></p>
+                        <p class="button skeleton"></p>
+                    </div>
+                </div>
+            </article>
+        </div>
+   </section>
     <script src="./index.js"></script>
 </body>
 </html>
