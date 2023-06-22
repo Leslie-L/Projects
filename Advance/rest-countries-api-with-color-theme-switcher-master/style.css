@@ -170,11 +170,13 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 1rem;
 }
 .item_modal{
     height: 25px;
     width: 150px;
     margin-top: 20px;
+    margin-bottom: 30px;
 }
 .modal_container{
     margin-top: 25px;
@@ -202,10 +204,15 @@ body{
     background-color: var(--White-LME);
     color: var(--VeryDarkBlue-LMT);
     margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 h3{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: bolder;
+    width: 240px;
 }
 .modal_item1{
     margin-top: 25px;
