@@ -1,0 +1,232 @@
+<!doctype html>
+<html class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body class="font-Montserrat dark:bg-gray-900">
+  <header>
+    <nav class="w-full h-14 z-10 hidden bg-white lg:flex p-4 justify-between fixed dark:bg-gray-800">
+      <div class="h-auto w-auto ">
+        <p class="text-xl text-primary font-black dark:text-white">Platzi Travel</p>
+      </div>
+      <div class="flex space-x-8 dark:text-white">
+        <a class="font-bold text-md text-primary dark:text-white" href="#home">Inicio</a>
+        <a class="font-bold text-md text-primary dark:text-white" href="#recomendados">Recomendados</a>
+        <a class="font-bold text-md text-primary dark:text-white" href="#rentas_destacadas">Rentas</a>
+        <a class="font-bold text-md text-primary dark:text-white" href="#faqs">FAQS</a>
+        <a class="font-bold text-md text-primary dark:text-white" href="#nosotros">Inicio</a>
+      </div>
+      <div class="flex space-x-4 dark:text-white">
+        <img width="20" height="20" src="./svg/search.svg" alt="">
+        <img width="20" height="20" id="toggle" src="./svg/moon.svg" alt="">
+        <img width="20" height="20" src="./svg/user.svg" alt="">
+      </div>
+    </nav>
+    
+  </header>
+  <main>
+    <section class=" w-full h-auto">
+        <div id="home">
+            <div class="w-full h-3/4 relative">
+              <div class=" w-full h-full flex flex-col absolute space-y-96 py-4 items-center lg:space-y-0 lg:items-start lg:pt-48  lg:justify-start">
+                <input class="outline-1 p-3 w-64  rounded-full shadow-sm transition duration-300 focus-within:shadow-sm focus:ring-3 focus:w-11/12 lg:hidden" placeholder="San Francisco" name="" id="">
+                <div class="hidden h-auto lg:w-2/5 lg:flex pb-6">
+                  <p class="text-4xl text-white ml-16 font-bold">Encuentra mas ubicaciones como esta</p>
+                </div>
+                <button class="w-32 rounded-full text-lg text-primary font-semibold bg-white shadow-sm  transition-all duration-500 ease-in  hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110 lg:ml-16">Explorar</button>
+             </div>
+             <div class="w-full h-full lg:h-96 lg:bg-sanFranciscoDesktop lg:bg-cover lg:bg-center">
+              <img class="lg:hidden" src="../img/sanFrancisco.jpg" alt="">
+            </div>
+            </div>
+        </div>
+
+        <div class="p-6" id="recomendados" >
+          <p class="text-3xl font-semibold text-primary">Recomendados</p>
+          <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-4 scrollbar-hide overflow-y-hidden">
+            <div class="Card">
+              <div class="w-full h-3/5 bg-norway bg-cover rounded-t-lg"></div>
+              <div class="w-full h-2/5  bg-secondary rounded-b-lg dark:bg-gray-700">
+                <p class="text-white text-bold text-lg py-2 px-4">Norway</p>
+                <p class="text-white text-md px-4">Paisajes Increibles</p>
+              </div>
+            </div>
+            <div class="Card">
+              <div class="w-full h-3/5 bg-new_york bg-cover rounded-t-lg"></div>
+              <div class="w-full h-2/5  bg-white rounded-b-lg">
+                <p class="text-tertiary text-bold text-lg py-2 px-4">New york</p>
+                <p class="text-tertiary text-md px-4">la gran manzana</p>
+              </div>
+            </div>
+          
+          <div class="Card">
+            <div class="w-full h-3/5 bg-seattle bg-cover rounded-t-lg"></div>
+            <div class="w-full h-2/5  bg-secondary rounded-b-lg dark:bg-gray-700">
+              <p class="text-white text-bold text-lg py-2 px-4">Seattle</p>
+              <p class="text-white text-md px-4">Una cuidad para disfrutar al maximo</p>
+            </div>
+          </div>
+          <div class="Card">
+            <div class="w-full h-3/5 bg-switzerland bg-cover rounded-t-lg"></div>
+            <div class="w-full h-2/5  bg-white rounded-b-lg">
+              <p class="text-tertiary text-bold text-lg py-2 px-4">Switzerland</p>
+              <p class="text-tertiary text-md px-4">El mejor chocolate caliente que probar</p>
+            </div>
+          </div>
+        
+        <div class="Card">
+          <div class="w-full h-3/5 bg-yosemite bg-cover rounded-t-lg"></div>
+          <div class="w-full h-2/5  bg-secondary rounded-b-lg dark:bg-gray-700">
+            <p class="text-white text-bold text-lg py-2 px-4">Yosemite</p>
+            <p class="text-white text-md px-4">Un respiro del mundo</p>
+          </div>
+        </div>
+        
+      </div>
+        </div>
+      <div class="px-6 mt-2 h-auto w-full" id="rentas_destacadas">
+          <p class="text-3xl text-primary font-semibold ">Rentas destacadas</p>
+          
+          <div class="w-full h-full flex flex-col space-y-2 items-center justify-center">
+            <div class="w-full mt-10 h-96 bg-chicago bg-cover rounded-xl ">
+              <p class="CardTitle">Chicago</p>
+              <p class="text-sm pl-8 text-black mr-24">2 habitaciones, 1 baño y cocina</p>
+            </div>
+          </div>
+          
+          <div class="lg:flex lg:h-full  lg:w-full lg:p-6 lg:space-x-4" >
+            <!div class="w-full h-full mt-10 flex flex-col space-y-6 items-center justify-center">
+              <div class="w-full h-96 bg-LA bg-cover rounded-xl lg:h-auto lg:mt-10">
+                <p class="CardTitle">Los Angeles</p>
+                <p class="text-sm pl-8 text-black mr-24">4 habitaciones, 1 baño y cocina</p>
+              </div>
+            </!div>
+            <div class="h-full w-full ">
+              <div class="w-full h-full mt-10 flex flex-col space-y-6 items-center justify-center">
+                <div class="w-full h-96 bg-miami bg-cover rounded-xl ">
+                  <p class="CardTitle">Miami</p>
+                  <p class="text-sm pl-8 text-black mr-24">2 habitaciones, 1 baño y cocina</p>
+                </div>
+              </div>
+              <div class="w-full h-full mt-10 flex flex-col space-y-6 items-center justify-center">
+                <div class="w-full h-96 bg-bali bg-cover rounded-xl ">
+                  <p class="CardTitle">Bali</p>
+                  <p class="text-sm pl-8 text-black mr-24">2 habitaciones, 1 baño y cocina</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+
+        <div class="w-full h-full mt-10" id="faqs">
+            <div class="w-full h-full px-6 flex flex-col space-y-4">
+              <p class="text-3xl text-primary font-semibold">FAQS</p>
+              <div  class="w-full h-full px-6">
+                <p class="text-xl font-medium text-primary">Política de Cancelación</p>
+                <p class="text-md pt-2">
+                  Para estancias menores a una semana es importante avisar con 3 días de
+                  anticipación, de caso contario será sancionado.
+                </p>
+              </div>
+              <div class="w-full h-full px-6">
+                <p class="text-xl font-medium text-primary">Métodos de pago</p>
+                <p class="text-md pt-2">
+                  Aceptamos distintos métodos de pago: VISA, MasterCard, American Express,
+                  Paypal y Binance
+                </p>
+              </div>
+              <div class="w-full h-full px-6">
+                <p class="text-xl font-medium text-primary">Mascotas</p>
+                <p class="text-md pt-2">El tema de las mascotas dependerá directamente del anfitrión.</p>
+              </div>
+              <div class="w-full h-full px-6">
+                <p class="text-xl font-medium text-primary">Información de Seguridad</p>
+                <p class="text-md pt-2">
+                  Todas nuestras estancias cuentan con seguro en caso de accidentes
+                </p>
+              </div>
+              <div class="w-full h-full px-6">
+                <p class="text-xl font-medium text-primary">Estancias Largas</p>
+                <p class="text-md pt-2">
+                  Contamos con estancias de hasta 3 meses, en este caso es requerido un
+                  anticipo con un monto del 50% del valor de la renta
+                </p>
+              </div>
+            </div>
+        </div>
+    </section>
+  </main>
+  <footer class="w-full h-auto bg-gray-50" id="nosotros">
+    <h3 class="text-lg">
+      About us
+  </h3>
+  <ul class="p-6">
+      <li class="text-sm text-gray-300">
+          Investors
+      </li>
+      <li class="text-sm text-gray-300">
+          Jobs
+      </li>
+      <li class="text-sm text-gray-300">
+          Terms and Conditions
+      </li>
+      <li class="text-sm text-gray-300">
+          Platzi Travel, Inc.
+      </li>
+      <li class="text-sm text-gray-300">
+          Follow Us
+          <ul class="text-xl text-gray-300 flex space-x-2">
+              <li>
+                  <a href="#">
+                      <i class="fa-brands fa-twitter"></i>
+                  </a>
+              </li>
+              <li>
+                  <a href="#">
+                      <i class="fa-brands fa-instagram"></i>
+                  </a>
+              </li>
+          </ul>
+      </li>
+  </ul>
+  </footer>
+  <div class="w-full h-16 bg-green-300 fixed left-0 bottom-0 shadow-sm flex  items-center justify-around lg:hidden dark:bg-gray-500" id="tab_bar" >
+      <a href="#home">
+        <img class="fill-current text-white" width="30" height="30" src="./svg/home.svg" alt="">
+      </a>
+      <a href="#rentas_destacadas">
+        <img class="fill-current text-white" width="30" height="30" src="./svg/search.svg" alt="">
+      </a>
+      <a href="#recomendados">
+        <img class="fill-current text-white" width="30" height="30" src="./svg/heart.svg" alt="">
+      </a>
+      <button>
+        <img class="fill-current text-white" width="30" height="30" src="./svg/moon.svg" id="toggle-sm" alt="">
+      </button>
+      <a href="#">
+        <img class="fill-current text-white" width="30" height="30" src="./svg/user.svg" alt="">
+      </a>
+  </div>
+  <script>
+    const htmlElement = document.querySelector('html');
+    const toggleButton = document.querySelector('#toggle');
+    const toggleButtoSm = document.querySelector('#toggle-sm');
+    const toggleDarkmode =()=>{
+      htmlElement.classList.contains('dark')?
+      htmlElement.classList.remove('dark'):
+      htmlElement.classList.add('dark')
+    }
+    toggleButton.addEventListener('click',toggleDarkmode)
+    toggleButtoSm.addEventListener('click',toggleDarkmode)
+    
+  </script>
+</body>
+
+</html>
+
+#https://www.kaggle.com/datasets/imakash3011/customer-personality-analysis
