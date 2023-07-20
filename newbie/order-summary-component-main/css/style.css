@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+:root{
+    --mobile-size: 320px;
+    --desktop--size:1440px;
+
+    --Primary-Pale-blue: hsl(225, 100%, 94%);
+    --Primary-Bright-blue: hsl(245, 75%, 52%);
+
+    --Neutral-Very-pale-blue: hsl(225, 100%, 98%);
+    --Neutral-Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    
+    --size-paragraph:1.6rem;
+    --sm:1.4rem;
+    --md:1.6rem;
+    --lg:1.8rem;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Sofia', cursive;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: var(--Primary-Pale-blue);
+    
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    margin: 25px auto;
+    width: var(--mobile-size);
+    height: 80vh;
+    background-color: white;
+    border-radius: 25px;
+    
+}
+
+.card-image img{
+ width: 100%;
+ border-top-left-radius: 25px;
+ border-top-right-radius: 25px;
+}
+.text-card{
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-card h1{
+    font-size: 25px;
+    font-weight: 600;
+}
+.text-card p{
+    margin: 1rem 15%;
+    font-size: var(--md);
+    text-align: center;
+    font-weight: 300;
+    color: var(--Neutral-Desaturated-blue);
+}
+.price-card{
+    width: 270px;
+    height: 10vh;
+    margin: 1.7rem auto;
+    border-radius: 1rem;
+    background-color:var(--Neutral-Very-pale-blue) ;
+    display: flex;
+    align-items: center;
+    font-size: var(--md);
+}
+.price-card figure img{
+    padding: 0 1.5rem;
+
+}
+.price-card .price-card-text{
+   width: 55%;
+}
+.price-card a{
+    margin-right: 10px;
+    font-weight: bold;
+    color: var(--Neutral-Desaturated-blue);
+ }
+ .buttons{
+    width: 270px;
+    margin: 1rem auto;
+ }
+ .primary-button{
+    width: 270px;
+    height: 50px;
+    margin-bottom: 1.5rem;
+    border-radius: 1rem;
+    border: 0;
+    background-color:var(--Primary-Bright-blue) ;
+    font-size: var(--md);
+    font-weight: bold;
+    color:white;
+    box-shadow:  3.0px 5.0px 5.0px var(--Neutral-Desaturated-blue) ;
+    
+ }
+ .cancel-button{
+     width: 270px;
+     border: 0;
+     background-color: white;
+     font-size: var(--md);
+     font-weight: bold;
+     color: var(--Neutral-Desaturated-blue);
+ }
+
+ @media (min-width:375px) {
+    body{
+        background-image: url("/images/pattern-background-desktop.svg");
+        background-repeat: repeat-x;
+    }
+    .card{
+        width: 375px;
+    }
+    .price-card{
+        width: 330px;
+    }
+    .buttons{
+        width: 330px;;
+     }
+     .primary-button{
+        width: 330px;
+     }
+     .cancel-button{
+        width: 330px;
+    }
+    
+ }

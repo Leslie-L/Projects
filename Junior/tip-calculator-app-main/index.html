@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main>
+    <h1>S P L I <br> T T E R</h1>
+    <section class="container">
+      <div class="bill-and-Tips">
+        <h2>Bill</h2>
+        <div class="bill-and-Tips__tip">
+          <span></span>
+          <input onchange="bills()" type="number" id="total">
+        </div>
+        <div class="selectTip">
+          <h2>Select Tip %</h2>
+          <div class="selectTipGrid">
+            <button type="button" id="b1" onclick="tip(0.05,'b1')" class="button-tip">5%</button>
+            <button type="button" id="b2" onclick="tip(0.1,'b2')" class="button-tip">10%</button>
+            <button type="button" id="b3" onclick="tip(0.15,'b3')" class="button-tip">15%</button>
+            <button type="button" id="b4" onclick="tip(0.25,'b4')" class="button-tip">25%</button>
+            <button type="button" id="b5" onclick="tip(0.5,'b5')" class="button-tip">50%</button>
+            <input type="number" onchange="customf()" class="input-tip" id="input-tip" placeholder="Custom">
+          </div>
+        </div>
+        <br>
+        <h2>Number of People</h2>
+        <div class="nPeople">
+          <span></span>
+          <input onchange="people()" type="number" id="numPeople" >
+        </div>
+      </div>
+      <div class="result"> 
+        
+        <div class="finalResult">
+          <div class="global">
+            <div class="left">
+              <h3>Tip Amount</h3>
+              <h4>/ person</h4>
+            </div>
+            <div class="right">
+              <p id="tipAmountR">$0</p>
+            </div>
+          </div>
+          <div class="global">
+            <div class="left">
+              <h3>Total</h3>
+              <h4>/ person</h4>
+            </div>
+            <div class="right">
+              <p id="totalPerson">$0</p>
+            </div>
+          </div>
+          <button type="button" onclick="reset()" class="button-reset">RESET</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Leslie Centeno</a>.
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
