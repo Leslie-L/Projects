@@ -18,6 +18,16 @@ body{
     font-size: 62.5%;
     background-color: var(--VeryLightGray-LMB);
 }
+::-webkit-scrollbar {
+    width: 5px; 
+    background-color: rgb(52 53 65);
+  }
+  
+  /* Estilo del thumb (el deslizador del scrollbar) */
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(184 185 195); /* Color del thumb */
+    border-radius: 10px; /* Radio de borde del thumb */
+  }
 /*Header*/
 .bar{
     width: 100%;
@@ -27,6 +37,7 @@ body{
     justify-content: space-between;
     align-items: center;
     color: var(--VeryDarkBlue-LMT);
+    box-shadow: -1px 3px 12px 5px hsl(0deg 0% 52% / 31%);
 }
 .bar-title{
     font-size: 1.4rem;
@@ -56,14 +67,21 @@ body{
     justify-content: flex-start;
     font-size: 1rem;
     font-weight: 600;
+    
 }
 .countries-search{
     display: flex;
+    box-shadow: -1px 3px 12px 5px hsl(0deg 0% 52% / 31%);
+    width: 300px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: var(--White-LME);
 }
 .countries-search span{
     font-size: 1.1rem;
     padding-left: 15px;
     padding-right: 5px;
+    padding-top: 5px;
     border-top: 1px solid var(--DarkGray-LMI);
     border-bottom: 1px solid var(--DarkGray-LMI);
     border-left: 1px solid var(--DarkGray-LMI);
@@ -71,11 +89,12 @@ body{
     border-bottom-left-radius: 5px ;
     background-color: var(--White-LME);
     color: var(--DarkGray-LMI);
+    
 }
 .countries-search input{
-    height: 26px;
+    
     border: none;
-    width: 240px;
+    width: 262px;
     border-top: 1px solid var(--DarkGray-LMI);
     border-bottom: 1px solid var(--DarkGray-LMI);
     border-right: 1px solid var(--DarkGray-LMI);
@@ -83,6 +102,7 @@ body{
     border-bottom-right-radius: 5px ;
     background-color: var(--White-LME);
     color: var(--VeryDarkBlue-LMT);
+    
 }
 .countries-filter select{
     margin-top: 20px;
@@ -93,6 +113,7 @@ body{
     padding: 10px;
     background-color: var(--White-LME);
     color: var(--VeryDarkBlue-LMT);
+    box-shadow: -1px 3px 12px 5px hsl(0deg 0% 52% / 31%);
 }
 .countries-list{
     margin-top: 25px;
@@ -102,7 +123,7 @@ body{
     display: grid;
     gap: 25px;
     grid-template-columns: repeat(auto-fill,minmax(240px,270px));
-    justify-items: center;
+    place-content: center;
     
 }
 .item{
@@ -111,6 +132,7 @@ body{
     border-radius: 5px;
     background-color: var(--White-LME);
     color: var(--VeryDarkBlue-LMT);
+    box-shadow: -1px 3px 12px 5px hsl(0deg 0% 52% / 31%);
 }
 .item img{
     height: 150px;
@@ -130,8 +152,16 @@ body{
 .item p{
     margin: 10px;
     height: 15px;
-    width: 150px;
+    width: 230px;
     border-radius: 5px;
+}
+.item p:nth-child(1){
+    margin-bottom: 10px;
+}
+.item_title_name{
+    font-size: 1rem;
+    font-weight: bold;
+    padding-bottom: 15px;
 }
 
 @keyframes skeleton {
@@ -171,6 +201,7 @@ body{
     justify-content: center;
     align-items: center;
     font-size: 1rem;
+    color: var(--VeryDarkBlue-LMT);
 }
 .item_modal{
     height: 25px;
@@ -178,6 +209,7 @@ body{
     margin-top: 20px;
     margin-bottom: 30px;
 }
+
 .modal_container{
     margin-top: 25px;
     display: flex;
@@ -235,8 +267,18 @@ h3{
     flex-direction: row;
     flex-wrap:wrap;
 }
+.button_span{
+    margin-right: 5px;
+}
 @media only screen and (min-width: 720px) {
-    
+    .countries{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .countries-filter select {
+        margin-top: 0;
+    }
     .modal_container{
         flex-direction: row;
     }
@@ -294,5 +336,7 @@ h3{
 - Dark Gray (Light Mode Input): hsl(0, 0%, 52%)
 - Very Light Gray (Light Mode Background): hsl(0, 0%, 98%)
 - White (Dark Mode Text & Light Mode Elements): hsl(0, 0%, 100%)
+rgb(52 53 65)
+rgb(184 185 195)
 
 */

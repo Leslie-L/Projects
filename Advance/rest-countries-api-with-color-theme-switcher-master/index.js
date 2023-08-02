@@ -34,7 +34,9 @@ search.addEventListener('change',searchByCountries);
 inputRegion.addEventListener('change',searchByRegion);
 listCountries.addEventListener('click',controlClickCountries);
 bntBack.addEventListener('click',modalControl);
+
 function modalControl() {
+    modal.classList.remove('modal');
     modal.classList.add('hide');
     secciontCountries.classList.remove('hide');
 }
@@ -108,27 +110,34 @@ function showCountries() {
             img.alt=name;
 
             const pName = document.createElement('p');
-            pName.classList.add('item-title'); 
-            pName.textContent = name;
+            pName.classList.add('item_title_name'); 
+            const textoName = document.createElement('strong');
+            textoName.textContent=name
+            pName.appendChild(textoName);
 
             const Ppopulation = document.createElement('p');
             Ppopulation.classList.add('item-title'); 
-            const boldPopulation = document.createElement('b');
-            boldPopulation.textContent = 'Population:';
+            const boldPopulation = document.createElement('strong');
+            boldPopulation.textContent = 'Population: ';
+            const textoNormal = document.createTextNode(population);
             Ppopulation.appendChild(boldPopulation);
-            Ppopulation.textContent += population;
+            Ppopulation.appendChild(textoNormal);
 
             const Pregion = document.createElement('p');
             Pregion.classList.add('item-title'); 
-            const boldRegion = document.createElement('b');
-            boldRegion.textContent = 'Region';
-            Pregion.textContent = region;
+            const boldRegion = document.createElement('strong');
+            boldRegion.textContent = 'Region: ';
+            const textoNormal2 = document.createTextNode(region);
+            Pregion.appendChild(boldRegion)
+            Pregion.appendChild(textoNormal2)
 
             const Pcapital = document.createElement('p');
             Pcapital.classList.add('item-title'); 
             const boldcapital = document.createElement('b');
-            boldcapital.textContent = 'Capital';
-            Pcapital.textContent = capital;
+            boldcapital.textContent = 'Capital: ';
+            const textoNormal3 = document.createTextNode(capital);
+            Pcapital.appendChild(boldcapital)
+            Pcapital.appendChild(textoNormal3)
 
             article.appendChild(img)
             article.appendChild(pName)
@@ -173,6 +182,13 @@ function searchByCountries(event) {
 }
 function searchByRegion(event) {
     const region = event.target.value;
+    if(region=="no"){
+        cont=0;
+        data=[...allData];
+        showCountries();
+        return
+    }
+    console.log("region",region)
     const newData = allData.filter(item =>{
         const name = item['region'].toLowerCase(); 
         return name.includes(region.toLowerCase());
@@ -273,9 +289,9 @@ function findCountry(name) {
     p23.appendChild(p23N);
     p23.appendChild(p23Nor);
 
-    divItem1.appendChild(p21)
-    divItem1.appendChild(p22)
-    divItem1.appendChild(p23)
+    divItem2.appendChild(p21)
+    divItem2.appendChild(p22)
+    divItem2.appendChild(p23)
 
     const divItem3 =document.createElement('div');
     divItem3.classList.add('modal_item3');
@@ -335,6 +351,7 @@ function findCountry(name) {
     
     */
     modal.classList.remove('hide');
+    modal.classList.add('modal');
     secciontCountries.classList.add('hide');
     
 }
