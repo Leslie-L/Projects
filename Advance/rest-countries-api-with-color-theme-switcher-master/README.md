@@ -29,10 +29,10 @@ Explore countries using this web application built with HTML, CSS, and vanilla J
 
 ```bash
 ##Clone the repository:
-git clone https://github.com/your-username/countries-explorer.git
+git clone https://github.com/Leslie-L/Projects/tree/main/Advance/rest-countries-api-with-color-theme-switcher-master
 
 ##Open the project folder:
-cd countries-explorer
+cd rest-countries-api-with-color-theme-switcher-master
 ```
 Open index.html in your preferred web browser.
 
